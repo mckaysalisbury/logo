@@ -1,0 +1,86 @@
+TO hair
+    forward 20
+    back 20
+END
+
+TO bigarc
+    repeat 30 [
+        forward 1
+        right 1
+    ]
+END
+
+TO smallarc
+    repeat 45 [
+        forward 1
+        right 2
+    ]
+END
+
+to teenyarc
+    repeat 60 [
+        forward 1
+        right 6
+    ]
+END
+
+to face
+    bigarc
+    left 30
+    hair
+    right 30
+    bigarc
+    left 60
+    hair
+    right 60
+    teenyarc
+    bigarc
+    left 90
+    hair
+    right 90
+    bigarc
+    left 120
+    hair
+    right 120
+    teenyarc
+    bigarc
+    left 150
+    hair
+    right 150
+    bigarc
+
+    left 90
+    hair
+    right 90
+
+    bigarc
+    bigarc
+
+    left 60
+    hair
+    right 60
+
+    bigarc
+    smallarc
+
+    pu
+    smallarc
+    smallarc
+    pd
+    smallarc
+
+    bigarc
+    left 120
+    hair
+    right 120
+
+    bigarc
+    bigarc
+
+    left 90
+    hair
+
+END
+
+face
+
