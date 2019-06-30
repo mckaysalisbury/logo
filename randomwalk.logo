@@ -1,0 +1,42 @@
+to Randomwalk
+    repeat 100
+    [
+        make "randommove (random 100)
+        make "randomturn (random 360)
+        right :randomturn
+        forward :randommove
+    ]
+end
+
+to dadwalk :numberoftimes
+    repeat :numberoftimes [
+        forward (random 100)
+        right (random 360)
+    ]
+end
+
+to Randomsquare
+    make "length (random 100)
+    repeat 4 [
+        forward :length
+        right 90
+    ]
+end
+
+
+to RandArc :repeat :angle
+    make "direction ((random 2) - 0.5) * 2
+    repeat :repeat [
+        forward 1
+        right (:angle * :direction)
+    ]
+end
+
+to RoundWalk :n
+    repeat :n [
+        RandArc (random 50) ((random 5) + 1)
+    ]
+end
+
+
+
