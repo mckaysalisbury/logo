@@ -1,0 +1,33 @@
+to smoothHeart :width
+    right 45
+    forward :width
+    left 90
+    pu
+    forward (:width / 2)
+    arc 180 (:width / 2)
+    forward (:width / 2)
+    left 90
+    forward (:width / 2)
+    arc 180 (:width / 2)
+    forward (:width / 2)
+    pd
+    left 90
+    forward :width
+    left 135
+end
+
+to bookHeart :width
+    right 45
+    forward :width
+    left 135
+    pu
+    repeat 2 [
+        forward (:width * .707 / 2)
+        arc 180 (:width * .707 / 2)
+        forward (:width * .707 / 2)
+    ]
+    pd
+    left 135
+    forward :width
+    left 135
+end

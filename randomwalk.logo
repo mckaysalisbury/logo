@@ -34,7 +34,7 @@ end
 
 to RoundWalk :n
     repeat :n [
-        RandArc (random 50) ((random 5) + 1)
+        RandArc (random 30) ((random 5) + 1)
     ]
 end
 
