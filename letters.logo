@@ -1,0 +1,75 @@
+to h :baseline
+    pd
+    forward (2 * :baseline)
+    back :baseline
+    right 90
+    forward :baseline
+    right 90
+    back :baseline
+    forward (:baseline * 2)
+    right 180
+end
+
+to kern :kerning
+    right 90
+    pu
+    forward :kerning
+    left 90
+end
+
+to a :baseline
+    pd
+    forward (2 * :baseline)
+    right 90
+    forward :baseline
+    right 90
+    forward :baseline
+    right 90
+    forward :baseline
+    back :baseline
+    left 90
+    forward :baseline
+    right 180
+end
+
+to p :baseline
+    pd
+    forward (2 * :baseline)
+    right 90
+    forward :baseline
+    right 90
+    forward :baseline
+    right 90
+    forward :baseline
+    back :baseline
+    pu
+    right 90
+    back :baseline
+end
+
+to y :baseline
+    pu
+    rt 90
+    forward (:baseline / 2)
+    lt 90
+    pd    
+    forward :baseline
+    lt 30
+    forward :baseline
+    bk :baseline
+    right 60
+    fd :baseline
+    pu
+    lt 30
+    back (:baseline * 2)
+end
+
+h 100
+kern 10
+a 100
+kern 10
+p 100
+kern 10
+p 100
+kern 10
+y 100

@@ -1,0 +1,95 @@
+
+to danielFace
+    pd
+    arc 360 50
+    right 90
+    arc 180 20
+    left 45
+    pu
+    forward 20
+    pd
+    arc 360 10
+    arc 360 1
+    right 225
+    pu
+    forward 20
+    pd
+    arc 360 10
+    arc 360 1
+end
+
+
+to h
+    fd 100
+    bk 50
+    rt 90
+    fd 50
+    lt 90
+    fd 50
+    bk 100
+end
+
+to a
+    fd 50
+    repeat 4 [
+        fd 50
+        rt 90
+    ]
+    lt 90
+    bk 50
+    lt 90
+    fd 50
+    rt 180
+end
+
+to p
+    fd 100
+    rt 90
+    repeat 3 [
+        fd 50
+        rt 90
+    ]
+    rt 180
+    fd 50
+    rt 180
+end
+
+to y
+    rt 45
+    fd 70.1
+    lt 45
+    fd 50
+    bk 50
+    lt 45
+    fd 70.1
+end
+
+to happy
+    h
+    pu
+    rt 90
+    fd 50
+    lt 90
+    pd
+    a
+    pu
+    rt 90
+    fd 50
+    lt 90
+    pd
+    p
+    pu
+    rt 90
+    fd 70
+    lt 90
+    pd
+    p
+    pu
+    rt 90
+    fd 70
+    lt 90
+    pd
+    y
+end
+
+

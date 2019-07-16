@@ -1,4 +1,22 @@
-to smoothHeart :width
+to bookHeart :width
+    pd
+    right 45
+    forward :width
+    left 135
+    pu
+    repeat 2 [
+        forward (:width * .707 / 2)
+        arc 180 (:width * .707 / 2)
+        forward (:width * .707 / 2)
+    ]
+    pd
+    left 135
+    forward :width
+    left 135
+end
+
+to simpleSmoothHeart :width
+    pd
     right 45
     forward :width
     left 90
@@ -16,18 +34,22 @@ to smoothHeart :width
     left 135
 end
 
-to bookHeart :width
+to complexSmoothHeart :width
+    pd
+    make "radius :width * .4142  # 1 / (1 + sqrt 2)
     right 45
     forward :width
-    left 135
+    left 90
     pu
-    repeat 2 [
-        forward (:width * .707 / 2)
-        arc 180 (:width * .707 / 2)
-        forward (:width * .707 / 2)
-    ]
+    forward :radius
+    left 45
+    arc 225 :radius
+    forward (2 * :radius)
+    left 45
+    arc 225 :radius
+    forward :radius
     pd
-    left 135
+    left 90
     forward :width
     left 135
 end
